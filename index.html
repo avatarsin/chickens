@@ -5,14 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="app.css" />
   </head>
   <body>
-    <h1>Chickens!</h1>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia totam
-      praesentium unde voluptatibus quod, magnam quisquam? Fugiat sunt iste
-      dignissimos temporibus, sed molestiae numquam aliquid ullam saepe totam,
-      id ducimus?
-    </p>
+    <svg viewBox="0 0 600 300">
+      <!-- Symbol-->
+      <symbol id="s-text">
+        <text text-anchor="middle" x="50%" y="50%" dy=".35em">
+          Interstellar
+        </text>
+      </symbol>
+      <!-- Duplicate symbols-->
+      <use class="text" xlink:href="#s-text"></use>
+      <use class="text" xlink:href="#s-text"></use>
+      <use class="text" xlink:href="#s-text"></use>
+      <use class="text" xlink:href="#s-text"></use>
+      <use class="text" xlink:href="#s-text"></use>
+    </svg>
   </body>
 </html>
